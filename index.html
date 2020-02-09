@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>自制锚跳转动画</title>
+    <style>
+        div {
+            width: 300px;
+            height: 500px;
+            margin: 200px 20px;
+        }
+
+        #default {
+            background: rgb(77, 37, 37);
+        }
+
+        #myAnimation {
+            background: rgb(41, 77, 37);
+        }
+
+        #tweenjsAnimation {
+            background: rgb(37, 48, 77);
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <a class="default" href="#default">默认的a跳转</a>
+        <a class="myAnimation" href="#myAnimation">自制的a跳转动画</a>
+        <a class="tweenjsAnimation" href="#tweenjsAnimation">tweenjs的a跳转缓动动画</a>
+
+        <div id="default"></div>
+        <div id="myAnimation"></div>
+        <div id="tweenjsAnimation"></div>
+    </section>
+    <!-- tween.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/16.3.5/Tween.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
